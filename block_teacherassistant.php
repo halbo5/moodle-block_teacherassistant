@@ -104,9 +104,9 @@ class block_teacherassistant extends \block_base {
                         get_string('text_training', 'block_teacherassistant'));
                 $this->content->text .= html_writer::end_tag('p');
             }
+        }
+        return $this->content;
     }
-    return $this->content;
-}
 
     public function specialization() {
         if (isset($this->config)) {
