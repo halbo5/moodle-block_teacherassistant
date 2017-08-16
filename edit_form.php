@@ -22,6 +22,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die();
+
 class block_teacherassistant_edit_form extends block_edit_form {
 
     protected function specific_definition($mform) {
@@ -32,7 +34,7 @@ class block_teacherassistant_edit_form extends block_edit_form {
         $mform->setDefault('config_title', get_string('defaulttitle', 'block_teacherassistant'));
         $mform->setType('config_title', PARAM_TEXT);
 
-        // Default category for creating courses
+        // Default category for creating courses.
         $mform->addElement('text', 'config_categoryid', get_string('categoryid', 'block_teacherassistant'));
         $mform->setDefault('config_categoryid', '1');
         $mform->setType('config_categoryid', PARAM_INT);

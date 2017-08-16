@@ -23,31 +23,31 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-    $capabilities = array(
+$capabilities = array(
 
-    'block/teacherassistant:myaddinstance' => array(
-        'riskbitmask' => RISK_PERSONAL,
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
-            'user' => CAP_ALLOW,
-        )
-    ),
+'block/teacherassistant:myaddinstance' => array(
+    'riskbitmask' => RISK_PERSONAL,
+    'captype' => 'write',
+    'contextlevel' => CONTEXT_SYSTEM,
+    'archetypes' => array(
+        'user' => CAP_ALLOW,
+    )
+),
 
-    'block/teacherassistant:addinstance' => array(
-        'riskbitmask' => RISK_SPAM | RISK_XSS,
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_BLOCK,
-        'archetypes' => array(
-            'user' => CAP_ALLOW,
-        )
-    ),
-    // Whether or not a user can see the block.
-    'block/teacherassistant:view' => array(
-        'captype' => 'read',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
-            'user' => CAP_ALLOW
-        )
-    ),
+'block/teacherassistant:addinstance' => array(
+    'riskbitmask' => RISK_SPAM | RISK_XSS,
+    'captype' => 'write',
+    'contextlevel' => CONTEXT_BLOCK,
+    'archetypes' => array(
+        'user' => CAP_ALLOW,
+    )
+),
+// Whether or not a user can see the block.
+'block/teacherassistant:view' => array(
+    'captype' => 'read',
+    'contextlevel' => CONTEXT_SYSTEM,
+    'archetypes' => array(
+        'user' => CAP_ALLOW
+    )
+),
 );

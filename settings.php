@@ -25,16 +25,40 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-    $settings->add(new admin_setting_configtext('block_teacherassistant/categoryid', get_string('categoryid', 'block_teacherassistant'),
-                       get_string('categoryid_desc', 'block_teacherassistant'), '1', PARAM_INT, 3));
-    $settings->add(new admin_setting_configtext('block_teacherassistant/deletecourse', get_string('deletecourse', 'block_teacherassistant'),
-                       get_string('deletecourse_desc', 'block_teacherassistant'), '', PARAM_INT, 5));
-    $settings->add(new admin_setting_configtext('block_teacherassistant/cohort', get_string('cohort', 'block_teacherassistant'),
-                       get_string('cohort_desc', 'block_teacherassistant'), '', PARAM_INT, 5));
-    $settings->add(new admin_setting_configtext('block_teacherassistant/teacherrights', get_string('teacherrights', 'block_teacherassistant'),
-                       get_string('teacherrights_desc', 'block_teacherassistant'), '', PARAM_INT, 5));
-        $settings->add(new admin_setting_configtext('block_teacherassistant/learningspace', get_string('learningspace', 'block_teacherassistant'),
-                       get_string('learningspace_desc', 'block_teacherassistant'), '', PARAM_INT, 5));
-            $settings->add(new admin_setting_configtext('block_teacherassistant/training', get_string('training', 'block_teacherassistant'),
-                       get_string('training_desc', 'block_teacherassistant'), '', PARAM_URL, 50));
+    $settings->add(new admin_setting_configtext('block_teacherassistant/categoryid',
+        get_string('categoryid', 'block_teacherassistant'),
+        get_string('categoryid_desc', 'block_teacherassistant'),
+        '1',
+        PARAM_INT,
+        3));
+    $settings->add(new admin_setting_configtext('block_teacherassistant/deletecourse',
+        get_string('deletecourse', 'block_teacherassistant'),
+        get_string('deletecourse_desc', 'block_teacherassistant'),
+        '',
+        PARAM_INT,
+        5));
+    $settings->add(new admin_setting_configtext('block_teacherassistant/cohort',
+        get_string('cohort', 'block_teacherassistant'),
+        get_string('cohort_desc', 'block_teacherassistant'),
+        '',
+        PARAM_INT,
+        5));
+    $settings->add(new admin_setting_configtext('block_teacherassistant/teacherrights',
+        get_string('teacherrights', 'block_teacherassistant'),
+        get_string('teacherrights_desc', 'block_teacherassistant'),
+        '',
+        PARAM_INT,
+        5));
+    $settings->add(new admin_setting_configtext('block_teacherassistant/learningspace',
+        get_string('learningspace', 'block_teacherassistant'),
+        get_string('learningspace_desc', 'block_teacherassistant'),
+        '',
+        PARAM_INT,
+        5));
+    $settings->add(new admin_setting_configtext('block_teacherassistant/training',
+        get_string('training', 'block_teacherassistant'),
+        get_string('training_desc', 'block_teacherassistant'),
+        '',
+        PARAM_URL,
+        50));
 }
